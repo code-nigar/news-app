@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="icon" href="logo.ico" type="image/ico">
+    <script src="https://kit.fontawesome.com/9b85e336b0.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  
+    <!--navbar-->
+    
+              <!-- Around the Globe  Explore   More   Sports   Business   Media  -->
+    <nav class="navbar navbar-expand-lg bg-light shadow">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Now News</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown" style="justify-content: end;">
+            <ul class="navbar-nav">
+              <li class="nav-item px-2">
+                <form id="news-form" class="form-inline">
+                  <input type="text" class="form-control mb-2 mr-sm-2" id="query-word" placeholder="get to know anything" style="display: inline; width: auto;"/>
+                  <button type="submit" class="input-group-text" id="submit-btn" style="display: inline;"><i class="fa-brands fa-searchengin"></i></button>
+              </form>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link btn btn-danger" href="#">Subscribe Now</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--page container-->
+      <div class="container mt-3">
+        <div class="row">
+
+          <!--left side bar-->
+          <div id="sidebar" class="col-md-3">
+            <!--TOP-collection-->
+            <div id="top-headlines" class="d-flex flex-column flex-nowrap">
+              
+            </div>
+            <!--LATEST collection-->
+            <div id="latest-headlines" class="d-flex flex-column flex-nowrap">
+              
+            </div>
+          </div>
+          <div class="col-md-9 container">
+            <div class="row">
+              <div id="section-tabs" class="col-12">
+                <ul class="justify-content-between shadow-sm py-2 overflow-hidden" style="margin-left: 0;">
+                    <li class=" d-inline ">
+                        <button class="btn btn-outline-dark" onclick="getNews('global')">All</button>
+                    </li>
+                    <li class=" d-inline ">
+                        <button class="btn btn-outline-dark" onclick="getNews('metropolitan')">Metropolitan</button>
+                    </li>
+                    <li class=" d-inline ">
+                        <button class="btn btn-outline-dark" onclick="getNews('business')">Business</button>
+                    </li>
+                    <li class=" d-inline ">
+                        <button class="btn btn-outline-dark" onclick="getNews('Agriculture')">Agriculture</button>
+                    </li>
+                    <li class=" d-inline ">
+                        <button class="btn btn-outline-dark" onclick="getNews('information technology science')">Tech Industry</button>
+                    </li>
+                    <li class=" d-inline ">
+                        <button class="btn btn-outline-dark" onclick="getNews('pakistan showbiz')">Lollywood</button>
+                    </li>
+                  <li class=" d-inline ">
+                      <button class="btn btn-outline-dark" onclick="getNews('sports cricket football')">Sports</button>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- middle-panel for content -->
+              <div class="col-9 container" id="content-container">
+
+                <!-- Featured news -->
+                <div class="card text-center col-12 mb-3">
+                  <div class="card-header text-dark">
+                    Featured
+                  </div>
+                  <div class="card-body bg-light">
+                    <img class="card-img-top" src="https://s.yimg.com/os/creatr-uploaded-images/2022-09/12d7bf20-39e0-11ed-b3f4-8c8398dae394" alt="Card image cap" style="height: 200px; object-fit:cover">
+                    <h5 class="card-title info-button text-info"><a>XPeng claims its G9 SUV is the world's fastest charging E</a></h5>
+                    <div class="acrdn-panel mt-1" style="max-height: 0;overflow: hidden;transition: max-height 0.2s ease-out;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam veritatis qui sapiente, sequi vero tempora? Corporis necessitatibus nostrum cum quod, praesentium hic illum officiis modi! Aperiam, illo eos cupiditate perferendis, unde magni alias excepturi amet adipisci explicabo quos sapiente quasi deserunt, dolores illum dolorum veritatis suscipit sit eius aliquam culpa minima impedit? Cum ratione cumque odio voluptate minus laborum repudiandae laboriosam repellat corporis aut, accusamus dolorum et tempora excepturi libero, illo aliquid fugiat odit recusandae assumenda porro! Rem consequuntur eius suscipit! Odio nesciunt fugiat quas consequatur fuga, quisquam tenetur et quam saepe, quaerat vitae ad porro sunt, amet dicta consectetur unde debitis aliquam? Dolores ad corrupti quod recusandae odio odit repellat reprehenderit, sapiente praesentium a deserunt unde quaerat ratione non dolorem, asperiores voluptates fugit error.</div>
+                  </div>
+                </div>
+                <!-- main news -->
+                
+              
+              </div>
+              <!-- right-panel for breaking news -->
+              <div class="col-3 container" id="breakingnews-container">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="app.js"></script>
+</body>
+</html>
