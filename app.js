@@ -50,25 +50,25 @@ window.onload = async () => {
 
     document.getElementById("top-headlines").innerHTML=`
     <h3>Top News</h3>
-              <div class="d-flex flex-row justify-content-between align-center">
+              <div class="d-flex flex-row justify-content-between align-baseline">
                 <img src=${topNews.articles[0].urlToImage} alt="" style="width: 80px; object-fit:contain; height:100px;">
-                <p class="px-2 headline-side">${(topNews.articles[0].title).slice(0,topNews.articles[i].title.lastIndexOf('-'))}</p>
+                <p class="px-2 my-auto headline-side">${(topNews.articles[0].title).slice(0,topNews.articles[i].title.lastIndexOf('-'))}</p>
               </div>
                <div class="d-flex flex-row justify-content-between align-center">
                 <img src=${topNews.articles[1].urlToImage} alt="" style="width: 80px; object-fit:contain; height:100px;">
-                <p class="px-2 headline-side">${(topNews.articles[1].title).slice(0,topNews.articles[i].title.lastIndexOf('-'))}</p>
+                <p class="px-2 my-auto headline-side">${(topNews.articles[1].title).slice(0,topNews.articles[i].title.lastIndexOf('-'))}</p>
               </div>
                <div class="d-flex flex-row justify-content-between align-center">
                 <img src=${topNews.articles[2].urlToImage} alt="" style="width: 80px; object-fit:contain; height:100px;">
-                <p class="px-2 headline-side">${(topNews.articles[2].title).slice(0,topNews.articles[i].title.lastIndexOf('-'))}</p>
+                <p class="px-2 my-auto headline-side">${(topNews.articles[2].title).slice(0,topNews.articles[i].title.lastIndexOf('-'))}</p>
               </div>
                <div class="d-flex flex-row justify-content-between align-center">
                 <img src=${topNews.articles[3].urlToImage} alt="" style="width: 80px; object-fit:contain; height:100px;">
-                <p class="px-2 headline-side">${(topNews.articles[3].title).slice(0,topNews.articles[i].title.lastIndexOf('-'))}</p>
+                <p class="px-2 my-auto headline-side">${(topNews.articles[3].title).slice(0,topNews.articles[i].title.lastIndexOf('-'))}</p>
               </div>
                <div class="d-flex flex-row justify-content-between align-center">
                 <img src=${topNews.articles[4].urlToImage} alt="" style="width: 80px; object-fit:contain; height:100px;">
-                <p class="px-2 headline-side">${(topNews.articles[4].title).slice(0,topNews.articles[i].title.lastIndexOf('-'))}</p>
+                <p class="px-2 my-auto headline-side">${(topNews.articles[4].title).slice(0,topNews.articles[i].title.lastIndexOf('-'))}</p>
               </div>
     `;
 
@@ -76,23 +76,23 @@ window.onload = async () => {
     <h3>Latest News</h3>
               <div class="d-flex flex-row justify-content-between align-center">
                 <img src=${latestNews.articles[0].urlToImage} alt="" style="width: 80px; object-fit:contain; height:100px;">
-                <p class="px-2 headline-side">${(latestNews.articles[0].title).slice(0,latestNews.articles[i].title.lastIndexOf('-'))}</p>
+                <p class="px-2 my-auto headline-side">${(latestNews.articles[0].title).slice(0,latestNews.articles[i].title.lastIndexOf('-'))}</p>
               </div>
                <div class="d-flex flex-row justify-content-between align-center">
                 <img src=${latestNews.articles[1].urlToImage} alt="" style="width: 80px; object-fit:contain; height:100px;">
-                <p class="px-2 headline-side">${(latestNews.articles[1].title).slice(0,latestNews.articles[i].title.lastIndexOf('-'))}</p>
+                <p class="px-2 my-auto headline-side">${(latestNews.articles[1].title).slice(0,latestNews.articles[i].title.lastIndexOf('-'))}</p>
               </div>
                <div class="d-flex flex-row justify-content-between align-center">
                 <img src=${latestNews.articles[2].urlToImage} alt="" style="width: 80px; object-fit:contain; height:100px;">
-                <p class="px-2 headline-side">${(latestNews.articles[2].title).slice(0,latestNews.articles[i].title.lastIndexOf('-'))}</p>
+                <p class="px-2 my-auto headline-side">${(latestNews.articles[2].title).slice(0,latestNews.articles[i].title.lastIndexOf('-'))}</p>
               </div>
                <div class="d-flex flex-row justify-content-between align-center">
                 <img src=${latestNews.articles[3].urlToImage} alt="" style="width: 80px; object-fit:contain; height:100px;">
-                <p class="px-2 headline-side">${(latestNews.articles[3].title).slice(0,latestNews.articles[i].title.lastIndexOf('-'))}</p>
+                <p class="px-2 my-auto headline-side">${(latestNews.articles[3].title).slice(0,latestNews.articles[i].title.lastIndexOf('-'))}</p>
               </div>
                <div class="d-flex flex-row justify-content-between align-center">
                 <img src=${latestNews.articles[4].urlToImage} alt="" style="width: 80px; object-fit:contain; height:100px;">
-                <p class="px-2 headline-side">${(latestNews.articles[4].title).slice(0,latestNews.articles[i].title.lastIndexOf('-'))}</p>
+                <p class="px-2 my-auto headline-side">${(latestNews.articles[4].title).slice(0,latestNews.articles[i].title.lastIndexOf('-'))}</p>
               </div>
     `;
 
